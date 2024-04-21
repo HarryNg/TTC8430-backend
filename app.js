@@ -9,9 +9,10 @@ const connectMongoDB = require('./db/mongodb');
 const albumController = require('./albumController');
 const jwt = require('jsonwebtoken');
 const { Strategy: JwtStrategy, ExtractJwt } = require('passport-jwt');
+require('dotenv')
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 let server;
 
 // Middleware to parse JSON request body

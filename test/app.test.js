@@ -7,7 +7,7 @@ afterAll(async () => {
   await mongoose.connection.close(); 
   await app.stopServer();
 });
-/*
+
 describe('Albums API', () => {
   test('Total number of albums should matches the number in test database', async () => {
     // Log in with admin credentials and extract the authentication token
@@ -75,7 +75,7 @@ describe('POST /api/albums', () => {
       expect(addedAlbum.genre).toBe('Rock');
     });
   });
-*/
+
 describe('DELETE /albums/:id', () => {
     test('should delete an existing album successfully', async () => {
         // Log in with admin credentials and extract the authentication token
